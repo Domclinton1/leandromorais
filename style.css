@@ -41,12 +41,17 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.7)), center/cover no-repeat;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.7)), url(./assets/images/bg-hero-2.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
   color: #fff;
   line-height: 1;
   text-align: left;
   display: flex;
 }
+
 
 .hero h1 {
   font-size: 68px;
