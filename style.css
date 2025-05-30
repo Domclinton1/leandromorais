@@ -547,3 +547,15 @@ footer {
   filter: drop-shadow(0 20px 30px rgba(19, 134, 223, 0.6)); /* brilho verde suave abaixo */
 
 }
+.video-normal {
+  width: 600px;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* opcional: cantos arredondados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* sombra sutil */
+}
+.video-section {
+  text-align: center;
+}
