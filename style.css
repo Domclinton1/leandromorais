@@ -377,6 +377,40 @@ footer {
   padding-right: 0;
  
 }
+.metodo.overlay {
+  position: relative;
+  background-image: url(./assets/images/leandro-escritorio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Cria a sombra por cima do background */
+.metodo.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* sombra escura com transparência */
+  z-index: 2;
+  pointer-events: none; /* permite clicar nos elementos abaixo */
+}
+
+/* Garante que o conteúdo fique acima da sombra */
+.metodo.overlay .container,
+.metodo.overlay .container-2 {
+  position: relative;
+  z-index: 3;
+  color: white; /* garante legibilidade */
+}
+
+
 .sobre h2 {
   font-size: 48px;
 }
@@ -393,9 +427,12 @@ footer {
   color: var(--bege-neutro);
   text-shadow: 1px 1px 1px var(--azul-ceu-claro);
 }
+
 .metodo p {
-  font-size: 22px;
-  color: var(--marrom-textual-suave);
+  font-size: 24px;
+  padding: 20px;
+  background-color: #ffffff7f;
+  color: #1d1d1d;
   text-shadow: var(--marrom-suave);
 }
 .metodo .container-2 img {
