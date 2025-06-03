@@ -25,14 +25,32 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset();
   });
 
-  // FAQ toggle
-  const perguntas = document.querySelectorAll(".faq-question");
+  const questions = document.querySelectorAll('.faq-question');
 
-  perguntas.forEach((pergunta) => {
-    pergunta.addEventListener("click", () => {
-      const resposta = pergunta.nextElementSibling;
-      resposta.style.display =
-        resposta.style.display === "block" ? "none" : "block";
+questions.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+
+    // Fecha todos os outros
+    document.querySelectorAll('.faq-answer').forEach((el) => {
+      if (el !== answer) {
+        el.style.maxHeight = null;
+        el.style.paddingTop = 0;
+        el.style.paddingBottom = 0;
+      }
     });
+
+    // Alterna a atual
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+      answer.style.paddingTop = 0;
+      answer.style.paddingBottom = 0;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      answer.style.paddingTop = "15px";
+      answer.style.paddingBottom = "15px";
+    }
   });
+});
+
 });
