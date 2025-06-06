@@ -121,13 +121,14 @@ nav a:hover {
   .menu {
     flex-direction: column;
     position: absolute;
-    top: 65px;
+    top: 50px;
     right: 0;
     background-color: var(--verde-salvia);
     width: 100%;
     text-align: center;
     display: none;
-    padding: 20px 0;
+    padding: 20px ;
+    text-align: right;
   }
 
   .menu.active {
