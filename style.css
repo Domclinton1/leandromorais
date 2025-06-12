@@ -65,9 +65,7 @@ body {
   font-size: 32px;
   margin-bottom: 20px;
 }
-:root {
-  --verde-salvia: #3a5a40;
-}
+
 
 nav.navbar {
   width: 100%;
@@ -467,6 +465,10 @@ footer {
 
 .sobre {
   background-color: #1d1d1d9d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .problemas-section {
   background-color: var(--verde-musgo-palido);
@@ -499,9 +501,16 @@ footer {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+.sobre .flex-container .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
 .sobre .container p {
-  width: 90%;
+  width: 100%;
   color: var(--marrom-textual-suave);
 }
 .sobre .container h2 {
@@ -526,9 +535,8 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: absolute;
-  right: -120px;
-  top: -640px;
+  position: absolute; 
+  top: -160px; 
   transform: translateY(-50%);
   z-index: 2;
   
@@ -548,7 +556,15 @@ footer {
   height: auto;
   filter: drop-shadow(0 20px 30px rgba(19, 134, 223, 0.6));
 }
-
+.texto {
+  margin-top: 180px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 1.1;
+}
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
   .flex-container {
@@ -702,6 +718,12 @@ footer {
     margin: 0;
     padding: 0;
   }
+  .hero .container h1 {
+    font-size: 2rem;
+  }
+  .hero .container p {
+    font-size: 1.4rem;
+  }
   .hero .container-2 {
     max-width: 100%;
     display: flex;
@@ -710,7 +732,7 @@ footer {
     align-items: center;
   }
   .hero .container-2 img {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   /*Fim do hero - inicio do Sobre*/

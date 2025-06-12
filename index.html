@@ -33,6 +33,9 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="style.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <header>
@@ -53,13 +56,13 @@
     </nav>
     <div class="hero">
       <div class="container">
-      <h1>Liberte-se de traumas e conflitos internos</h1>
-      <p>Cuide da sua saúde mental com terapia com propósito e resultado</p>
+      <h1 data-aos="fade-down" data-aos-duration="1000">Liberte-se de traumas e conflitos internos</h1>
+      <p data-aos="fade-up" data-aos-duration="1000">Cuide da sua saúde mental com terapia com propósito e resultado</p>
       <a href="https://wa.me/5531998648339?text=Olá%2C%20gostaria%20de%20agendar%20uma%20terapia...
-" target="_blank" class="btn">Agende sua sessão no WhatsApp</a>
+" target="_blank" class="btn" data-aos="zoom-in-up" data-aos-duration="1000">Agende sua sessão no WhatsApp</a>
     </div>
     <div class="container-2">
-        <img src="./assets/leandro-morais-1.svg" alt="Foto de Leandro Morais, Psicanalista Terapeuta">
+        <img src="./assets/leandro-morais-1.svg" alt="Foto de Leandro Morais, Psicanalista Terapeuta" data-aos="fade-up" data-aos-duration="1000">
     </div>
     </div>
   </header>
@@ -68,13 +71,13 @@
   <div class="flex-container">
     <div class="container">
       <div class="sobre-img-wrapper">
-        <div class="sobre-img">
+        <div class="sobre-img" data-aos="fade-down" data-aos-duration="1400">
           <img src="./assets/leandro-morais-4.svg" alt="Leandro Morais">
           <span>Muito prazer, Dr. Leandro Morais</span>
         </div>
       </div>
 
-      <div class="texto">
+      <div class="texto" data-aos="fade-up" data-aos-duration="1400">
         <p>
           Sou Leandro e meu prazer é auxiliar meu cliente a entender e acolher dores que não cabem em palavras. Reconduzir histórias que pareciam perdidas. Esse é o meu ofício.
         </p>
@@ -93,7 +96,7 @@
         <p>
           Se você sente que está vivendo no automático, repetindo ciclos que ferem, ou se perdeu de si no meio do caminho talvez seja hora de se escutar com mais coragem.
         </p>
-        <a href="https://wa.me/5531998648339?text=Olá%2C%20gostaria%20de%20agendar%20uma%20terapia..." target="_blank" class="btn">Vamos juntos ressignificar sua história.</a>
+        <a href="https://wa.me/5531998648339?text=Olá%2C%20gostaria%20de%20agendar%20uma%20terapia..." target="_blank" class="btn" data-aos="zoom-in-up" data-aos-duration="1400">Vamos juntos ressignificar sua história.</a>
       </div>
     </div>
   </div>
@@ -327,5 +330,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script> AOS.init() </script>
 </body>
 </html>
