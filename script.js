@@ -64,3 +64,9 @@ questions.forEach((btn) => {
     menu.classList.toggle('active');
   });
 
+
+  document.getElementById("btnWhatsApp").addEventListener("click", function() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17195519900'
+    });
+  });
