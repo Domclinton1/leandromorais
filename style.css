@@ -577,6 +577,9 @@ footer {
   width: 100%;
   line-height: 1.1;
 }
+.elfsight a {
+  display: none;
+}
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
   .flex-container {
