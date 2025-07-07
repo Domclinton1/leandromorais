@@ -127,6 +127,7 @@ nav a:hover {
     display: none;
     padding: 20px ;
     text-align: right;
+    z-index: 999;
   }
 
   .menu.active {
@@ -526,13 +527,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 5px 3px #000;
+  
   
 }
 
 .sobre-img {
   width: 340px;
   height: 340px;
+  
   border-radius: 50%;
   background-color: var(--marinho-sutil);
   border: 6px solid rgb(19, 255, 19);
@@ -585,10 +587,19 @@ footer {
   .sobre-img {
     position: static;
     transform: none;
-    margin-top: 20px;
+    margin: 20px;
     width: 220px;
     height: 220px;
+    
+  } 
+  .sobre-img span {
+    min-width: 360px;
+    line-height: 1;
+    font-weight: bold;
+  
+    
   }
+  
 }
 
 
@@ -787,6 +798,8 @@ footer {
     padding: 0;
     margin: 0;
     width: 100%;
+    line-height: 1;
+    font-size: 100%;
   }
 
   .metodo .container {
@@ -808,7 +821,38 @@ footer {
     max-width: 100%;
     margin: 0 auto;
   }
+  .first-section {
+    background-color: #000;
+    color: #f4f1ed;
+  }
+  .first-section h2 {
+    color: #fff;
+  }
+  .problemas-section.second-section {
+    background-color: var(--verde-salvia);
+    color: #f9f9f9;
+    font-weight: 500;
+    text-shadow: 1px 1.1px 1px #000;
+  }
+  .problemas-section.second-section h2 {
+    color: #f5f5f5;
+    text-shadow: 1px 1.4px 1px #000;
+  }
 
+  .problemas-header {
+    padding: 0;
+    margin: 0;
+  }
+  .problemas-header h2 {
+    font-size: 1.4rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .problemas-header p {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+  }
 
   .cta .container {
     max-width: 100%;
