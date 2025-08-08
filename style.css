@@ -891,7 +891,56 @@ footer .container p {
   .hero .container p {
     font-size: 1.3rem;
   }
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+ .sobre .container {
+  height: auto;
+  margin: 0 auto;
+  
+ }
+ .sobre {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .sobre .flex-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+  }
+  .sobre .flex-container .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sobre .flex-container .container .texto {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+  }
+ .sobre-img-wrapper {
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+ .container .texto {
+  margin-top: 0;
+ }
   .benefit-text h2 {
     line-height: 1;
     font-size: 1.8rem;
