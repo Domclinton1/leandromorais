@@ -1,59 +1,25 @@
-// script.js
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+      const answer = button.nextElementSibling;
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("form-contato");
+      // Fecha outros abertos (opcional)
+      document.querySelectorAll(".faq-answer").forEach(item => {
+        if (item !== answer) {
+          item.style.maxHeight = null;
+          item.style.padding = "0 20px";
+        }
+      });
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const nome = form.nome.value.trim();
-    const email = form.email.value.trim();
-    const mensagem = form.mensagem.value.trim();
-
-    if (!nome || !email || !mensagem) {
-      alert("Por favor, preencha todos os campos.");
-      return;
-    }
-
-    const numeroWhatsApp = "5531998648339"; // <- Substitua pelo número real
-
-    const texto = `Olá, meu nome é *${nome}*.\n\nGostaria de agendar uma sessão de terapia.\n\n📧 *E-mail:* ${email}\n🗒️ *Mensagem:*\n${mensagem}`;
-
-    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
-
-    window.open(url, "_blank");
-    form.reset();
-  });
-
-  const questions = document.querySelectorAll('.faq-question');
-
-questions.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const answer = btn.nextElementSibling;
-
-    // Fecha todos os outros
-    document.querySelectorAll('.faq-answer').forEach((el) => {
-      if (el !== answer) {
-        el.style.maxHeight = null;
-        el.style.paddingTop = 0;
-        el.style.paddingBottom = 0;
+      // Alterna o atual
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        answer.style.padding = "0 20px";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        answer.style.padding = "20px";
       }
     });
-
-    // Alterna a atual
-    if (answer.style.maxHeight) {
-      answer.style.maxHeight = null;
-      answer.style.paddingTop = 0;
-      answer.style.paddingBottom = 0;
-    } else {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-      answer.style.paddingTop = "15px";
-      answer.style.paddingBottom = "15px";
-    }
   });
-});
-
-});
 
 
 
