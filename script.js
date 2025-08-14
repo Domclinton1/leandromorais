@@ -36,3 +36,5 @@ document.querySelectorAll(".faq-question").forEach(button => {
       'send_to': 'AW-17195519900'
     });
   });
+
+
