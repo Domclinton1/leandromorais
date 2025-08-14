@@ -23,12 +23,33 @@ document.querySelectorAll(".faq-question").forEach(button => {
 
 
 
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
+ const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("menuOverlay");
+const header = document.getElementById("header");
+let lastScroll = 0;
 
-  hamburger.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
+// Abrir menu
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+// Fechar ao clicar no overlay
+overlay.addEventListener("click", closeMenu);
+
+// Fechar ao clicar em um link
+menu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+function closeMenu() {
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
+
+
 
 
   document.getElementById("btnWhatsApp").addEventListener("click", function() {
