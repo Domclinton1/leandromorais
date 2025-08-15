@@ -624,7 +624,11 @@ footer .container p {
   align-items: center;
 }
 
-
+.flex-container { 
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
 .sobre .container p {
   width: 100%;
   background: linear-gradient(to right, #fff, rgb(240, 242, 240));
@@ -1107,8 +1111,9 @@ footer .container p {
   }
 }
 .elfsight {
-  background: linear-gradient(to right, #fff, rgb(138, 232, 138)); 
+  background-color: #1d1d1d;
   margin: 0 auto;
+  padding: 20px;
 }
 .elfsight a {
   display: none;
