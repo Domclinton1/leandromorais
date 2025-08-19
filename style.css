@@ -435,7 +435,9 @@ footer .container p {
   pointer-events: none;
   z-index: 2;
 }
-
+.hero .btn {
+  margin-top: 120px;
+}
 
 .hero img {
     max-width: 600px;
@@ -955,6 +957,9 @@ footer .container p {
   .hero .container p {
     font-size: 1.3rem;
   }
+  .hero .btn {
+    margin-top: 30px;
+  }
   .positive-infos {
     flex-wrap: wrap;
   }
@@ -1030,7 +1035,7 @@ footer .container p {
   }
   .sobre .texto p {
     line-height: 1;
-    text-align: left;
+    text-align: center;
   }
   .video-section {
     width: 100%;
@@ -1146,6 +1151,7 @@ footer .container p {
     max-width: 160px;
     max-height: 160px;
   }
+ 
   .abordagem-leandro  {
     display: flex;
     flex-direction: column;
@@ -1176,6 +1182,19 @@ footer .container p {
 .elfsight a {
   display: none;
 }
+.imagination-span {
+    font-size: 20px;
+    text-align:center;
+    line-height: 1;
+    margin: 20px 0;
+    
+  }
+  .imagination-span strong {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fff, rgb(138, 232, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 .abordagem {
   background-color: #1d1d1d;
   
@@ -1242,7 +1261,7 @@ footer .container p {
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1rem;
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -1276,6 +1295,11 @@ footer .container p {
   border-radius: 10px; /* opcional */
   filter: drop-shadow(0 0 25px 5px rgba(0, 255, 0, 0.6)); /* sombra verde inicial */
   animation: trovoada 6s infinite;
+}
+.psiterapia em {
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 @keyframes trovoada {
