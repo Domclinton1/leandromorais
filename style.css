@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -35,10 +35,8 @@ body {
   color: #333;
   line-height: 1.3;
 }
-
-
 .container {
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
@@ -46,7 +44,8 @@ body {
 }
 
 .hero {
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.7)), url(./assets/images/bg-hero-2.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./assets/images/bg-hero-2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,11 +56,10 @@ body {
   display: flex;
 }
 
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,7 +68,7 @@ body {
 .hero p {
   font-size: 28px;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-containers {
@@ -89,16 +87,15 @@ nav.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 30px 90px;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #1d1d1d;
   z-index: 1100;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  
 }
 
 /* Logo com gradiente */
@@ -107,7 +104,7 @@ nav.navbar {
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Links desktop */
@@ -195,13 +192,12 @@ nav a:hover {
   }
 }
 
-
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   padding: 12px;
   border: none;
@@ -215,16 +211,14 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #388E3C;
+  background-color: #388e3c;
 }
 
 section {
   padding: 60px 20px;
-  
+
   margin: 0 auto;
 }
-
-
 
 h2 {
   font-size: 32px;
@@ -250,7 +244,7 @@ form textarea {
 }
 
 form button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -260,7 +254,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #388E3C;
+  background-color: #388e3c;
 }
 .cta.overlay {
   position: relative;
@@ -298,12 +292,10 @@ form button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 .cta h2 {
   color: #fff;
 }
-
 
 .redes-sociais h2 {
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
@@ -312,7 +304,6 @@ form button:hover {
   z-index: 99;
   text-transform: uppercase;
   font-size: 2.5rem;
-  
 }
 .midias {
   display: flex;
@@ -334,13 +325,12 @@ form button:hover {
   align-items: center;
   justify-content: space-around;
   max-width: fit-content;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   gap: 1rem;
   box-shadow: 3px 5px 3px #fff;
 }
 .midias img {
   width: 32px;
-  
 }
 
 footer {
@@ -365,8 +355,8 @@ footer .container p {
   text-transform: uppercase;
   margin-bottom: 30px;
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .faq-item {
@@ -388,14 +378,13 @@ footer .container p {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.5s;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 .faq-question:hover {
   background: linear-gradient(to left, #fff, rgb(92, 239, 92));
-  
 }
 
 .faq-answer {
@@ -411,13 +400,12 @@ footer .container p {
   margin: 15px auto;
   font-weight: 500;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
 }
 
-
 .beneficios {
-    display: flex;
+  display: flex;
 }
 .container-2 {
   position: relative;
@@ -440,14 +428,15 @@ footer .container p {
 }
 
 .hero img {
-    max-width: 600px;
-    filter: drop-shadow(0 20px 30px rgba(168, 195, 160, 0.6)); /* brilho verde suave abaixo */
-
+  max-width: 600px;
+  filter: drop-shadow(
+    0 20px 30px rgba(168, 195, 160, 0.6)
+  ); /* brilho verde suave abaixo */
 }
 .positive-infos {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+
   gap: 1rem;
   padding: 0;
   margin: 0;
@@ -470,6 +459,7 @@ footer .container p {
   background-color: #1d1d1d;
   text-align: center;
 }
+
 #terapia {
   background-color: #1d1d1d;
 }
@@ -497,12 +487,12 @@ footer .container p {
   text-transform: uppercase;
 }
 
-
 .problemas-header {
   padding: 40px 4%;
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
 .problemas-header h2 {
   text-transform: uppercase;
   font-size: 3rem;
@@ -513,17 +503,17 @@ footer .container p {
 }
 .problemas-header p {
   background: linear-gradient(to right, #fff, rgb(240, 242, 240));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-    font-size: 1.4rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  font-size: 1.4rem;
 }
 
 .problemas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
-  max-width: 1250px;
+  max-width: 1200px;
   justify-content: center;
   align-items: stretch;
   margin: 0 auto;
@@ -572,27 +562,23 @@ footer .container p {
   line-height: 1.4;
 }
 
-
-
 .beneficios .container ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    justify-content: space-between;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: space-between;
 }
 .beneficios .container ul li {
-   
-    padding: 20px;
-    text-align: center;
-    align-items: stretch;
-    border-radius: 12px;
-    box-shadow: 3px 5px 3px #1d1d1d;
-    background-color: var(--azul-ceu-claro);
-    color: var(--marrom-textual-suave);
-    font-weight: 500;
+  padding: 20px;
+  text-align: center;
+  align-items: stretch;
+  border-radius: 12px;
+  box-shadow: 3px 5px 3px #1d1d1d;
+  background-color: var(--azul-ceu-claro);
+  color: var(--marrom-textual-suave);
+  font-weight: 500;
 }
-
 
 .problemas-section {
   background-color: var(--verde-musgo-palido);
@@ -606,7 +592,6 @@ footer .container p {
 }
 
 .sobre .container .btn {
-  
   text-align: center;
   width: fit-content;
 }
@@ -624,7 +609,7 @@ footer .container p {
   align-items: center;
 }
 
-.flex-container { 
+.flex-container {
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -632,9 +617,9 @@ footer .container p {
 .sobre .container p {
   width: 100%;
   background: linear-gradient(to right, #fff, rgb(240, 242, 240));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
 .sobre .container h2 {
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
@@ -649,7 +634,6 @@ footer .container p {
   justify-content: center;
   align-items: center;
   margin-top: 120px;
-  
 }
 
 .sobre-img {
@@ -663,12 +647,11 @@ footer .container p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: absolute; 
-  top: -175px; 
+  position: absolute;
+  top: -175px;
   transform: translateY(-50%);
   z-index: 2;
   box-shadow: 3px 5px 3px #000;
-  
 }
 .sobre-img span {
   width: 100%;
@@ -679,10 +662,10 @@ footer .container p {
   line-height: 1;
   margin-top: -30px;
   z-index: 1;
-  border-radius: 12px;  
+  border-radius: 12px;
   box-shadow: 3px 5px 3px #000;
   padding: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -714,25 +697,19 @@ footer .container p {
     margin: 20px;
     width: 220px;
     height: 220px;
-    
-  } 
+  }
   .sobre-img span {
     min-width: 360px;
     line-height: 1;
     font-weight: bold;
-  
-    
   }
-  
 }
 
-
-
-.sobre, .metodo {
+.sobre,
+.metodo {
   display: flex;
   padding-bottom: 0;
   padding-right: 0;
- 
 }
 .metodo.overlay {
   position: relative;
@@ -767,7 +744,6 @@ footer .container p {
   color: white; /* garante legibilidade */
 }
 
-
 .sobre h2 {
   font-size: 3rem;
 }
@@ -776,8 +752,7 @@ footer .container p {
   text-align: center;
 }
 
-
-.metodo  h2 {
+.metodo h2 {
   font-size: 52px;
   color: var(--bege-neutro);
   text-shadow: 1px 1px 1px var(--azul-ceu-claro);
@@ -791,8 +766,9 @@ footer .container p {
   text-shadow: var(--marrom-suave);
 }
 .metodo .container-2 img {
-  filter: drop-shadow(0 20px 30px rgba(19, 134, 223, 0.6)); /* brilho verde suave abaixo */
-
+  filter: drop-shadow(
+    0 20px 30px rgba(19, 134, 223, 0.6)
+  ); /* brilho verde suave abaixo */
 }
 .video-normal {
   width: 600px;
@@ -830,7 +806,7 @@ footer .container p {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   max-width: 320px;
   flex: 1 1 300px;
   text-align: left;
@@ -856,17 +832,17 @@ footer .container p {
   padding-bottom: 30px;
 }
 .benefit-text h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
   font-size: 3rem;
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .benefit-text p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0;
   font-size: 1.8rem;
@@ -875,9 +851,8 @@ footer .container p {
 }
 .benefit-box {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   gap: 2rem;
-  
 }
 .benefit-item {
   box-shadow: 3px 5px 3px #fff;
@@ -887,7 +862,6 @@ footer .container p {
   align-items: center;
   color: #fff;
   background: linear-gradient(to right, #c9dabf, rgb(138, 232, 138));
-   
 }
 .benefit-item h3 {
   text-transform: uppercase;
@@ -897,7 +871,6 @@ footer .container p {
 
 .psiterapia {
   background: linear-gradient(to right, #1d1d1d, #1d1d1d);
-   
 }
 .psiterapia-container {
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
@@ -907,7 +880,6 @@ footer .container p {
   justify-content: space-between;
   gap: 2rem;
   border-radius: 15px;
-  
 }
 .psiterapia img {
   max-width: 300px;
@@ -938,7 +910,7 @@ footer .container p {
   margin: 0 auto;
 }
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width: 1020px) {
   .hero {
     width: 100%;
   }
@@ -970,12 +942,11 @@ footer .container p {
     align-items: center;
     margin: 0 auto;
   }
- .sobre .container {
-  height: auto;
-  margin: 0 auto;
-  
- }
- .sobre {
+  .sobre .container {
+    height: auto;
+    margin: 0 auto;
+  }
+  .sobre {
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -1003,16 +974,15 @@ footer .container p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
- .sobre-img-wrapper {
-  max-width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
- }
- .container .texto {
-  margin-top: 0;
- }
+  .sobre-img-wrapper {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container .texto {
+    margin-top: 0;
+  }
   .benefit-text h2 {
     line-height: 1;
     font-size: 1.8rem;
@@ -1028,7 +998,7 @@ footer .container p {
     width: 100%;
     max-width: 100%;
   }
-  .sobre .texto h2{
+  .sobre .texto h2 {
     font-size: 2rem;
     text-align: center;
     line-height: 1;
@@ -1041,7 +1011,7 @@ footer .container p {
     width: 100%;
     padding: 0;
   }
-  .video-section .problemas-header  h2{
+  .video-section .problemas-header h2 {
     padding: 0;
     margin: 0;
     font-size: 1.3rem;
@@ -1055,15 +1025,14 @@ footer .container p {
     width: 100%;
   }
 
-  .problemas-section.first-section h2, 
+  .problemas-section.first-section h2,
   .problemas-section.second-section h2 {
     line-height: 1;
     font-size: 1.6rem;
     text-align: center;
   }
-  .problemas-section.first-section p, 
-  .problemas-section.second-section p
-  {
+  .problemas-section.first-section p,
+  .problemas-section.second-section p {
     line-height: 1;
     font-size: 1.3rem;
     text-align: center;
@@ -1071,10 +1040,9 @@ footer .container p {
     line-height: 1;
   }
   .psiterapia {
-   
     padding: 10px;
   }
-  .psiterapia-container{
+  .psiterapia-container {
     flex-direction: column-reverse;
     padding: 10px;
   }
@@ -1086,8 +1054,7 @@ footer .container p {
   .psiterapia-container p {
     font-size: 1.3rem;
     line-height: 1;
-    font-family: 'Poppins', sans-serif;
-
+    font-family: "Poppins", sans-serif;
   }
   .psiterapia-container img {
     width: 100%;
@@ -1127,10 +1094,10 @@ footer .container p {
     max-width: 1020px;
     width: 100%;
   }
-  .abordagem-title  {
+  .abordagem-title {
     padding: 10px;
   }
-  .abordagem-title h2{
+  .abordagem-title h2 {
     line-height: 1;
     width: 100%;
   }
@@ -1143,16 +1110,15 @@ footer .container p {
   }
   .abordagem-imaginations {
     display: flex;
-   flex-direction: column;
-   
+    flex-direction: column;
   }
-  
+
   .imagination {
     max-width: 160px;
     max-height: 160px;
   }
- 
-  .abordagem-leandro  {
+
+  .abordagem-leandro {
     display: flex;
     flex-direction: column;
   }
@@ -1162,16 +1128,15 @@ footer .container p {
   }
   .imagination-span {
     font-size: 20px;
-    text-align:center;
+    text-align: center;
     line-height: 1;
     margin: 20px 0;
-    
   }
   .imagination-span strong {
     text-transform: uppercase;
     background: linear-gradient(to right, #fff, rgb(138, 232, 138));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 .elfsight {
@@ -1183,21 +1148,19 @@ footer .container p {
   display: none;
 }
 .imagination-span {
-    font-size: 20px;
-    text-align:center;
-    line-height: 1;
-    margin: 20px 0;
-    
-  }
-  .imagination-span strong {
-    text-transform: uppercase;
-    background: linear-gradient(to right, #fff, rgb(138, 232, 138));
+  font-size: 20px;
+  text-align: center;
+  line-height: 1;
+  margin: 20px 0;
+}
+.imagination-span strong {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #fff, rgb(138, 232, 138));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  }
+}
 .abordagem {
   background-color: #1d1d1d;
-  
 }
 
 .abordagem {
@@ -1234,7 +1197,6 @@ footer .container p {
 }
 .abordagem-text p {
   color: #fff;
-  
 }
 .abordagem-text span {
   background: linear-gradient(to right, #fff, rgb(138, 232, 138));
@@ -1274,7 +1236,6 @@ footer .container p {
 }
 .abordagem-leandro {
   border-radius: 50%;
- 
 }
 .abordagem-leandro .btn {
   margin-top: -20px;
@@ -1293,7 +1254,9 @@ footer .container p {
 }
 .abordagem-leandro img {
   border-radius: 10px; /* opcional */
-  filter: drop-shadow(0 0 25px 5px rgba(0, 255, 0, 0.6)); /* sombra verde inicial */
+  filter: drop-shadow(
+    0 0 25px 5px rgba(0, 255, 0, 0.6)
+  ); /* sombra verde inicial */
   animation: trovoada 6s infinite;
 }
 .psiterapia em {
@@ -1303,7 +1266,8 @@ footer .container p {
 }
 
 @keyframes trovoada {
-  0%, 100% {
+  0%,
+  100% {
     filter: drop-shadow(0 0 25px 5px rgba(0, 255, 0, 0.6));
   }
   10% {
@@ -1327,4 +1291,28 @@ footer .container p {
   72% {
     filter: drop-shadow(0 0 25px 5px rgba(0, 255, 0, 0.6));
   }
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
 }
